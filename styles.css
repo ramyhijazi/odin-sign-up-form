@@ -1,5 +1,11 @@
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
+
 body {
     display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -8,6 +14,42 @@ body {
     border: 1px solid black;
     height: 100vh;
     width: 35%;
+    background-image: url(leaves.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-background {
+    background: black;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 25%;
+    display: flex;
+    top: 150px;
+    opacity: 0.7;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 35%;
+    height: 25%;
+    top: 150px;
+}
+
+.name {
+    font-size: 5rem;
+    font-family: Norse;
+}
+
+#odin-icon {
+    height: 150px;
+    width: 120px;
 }
 
 .section-two {
@@ -19,6 +61,61 @@ body {
     align-items: center;
 }
 
+p {
+    font-weight: bold;
+}
+
+.create-account, .login {
+    height: 50px;
+    width: 150px;
+    font-family: Norse;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(7, 70, 7);
+    border-radius: 4%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+form {
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+    border-radius: 3%;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-family: Norse;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-item {
+    flex: 1;
+}
+
+
 #panel {
-    border: 1px solid red;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.create-account {
+    margin-top: 20px;
+}
+
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: forestgreen;
 }
